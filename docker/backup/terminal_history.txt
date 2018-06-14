@@ -1,0 +1,548 @@
+
+gklsan@gklsan ~/workspace/blog $ history
+    1  sudo apt-get update
+    2  apt update
+    3  sudo apt-get update
+    4  sudo apt-get install docker-ce
+    5  sudo apt-get remove docker-ce
+    6  sudo apt-get update
+    7  sudo apt-get remove docker-ce
+    8  sudo apt-get install docker-ce
+    9  sudo apt-get update
+   10  sudo apt-get -y install apt-transport-https ca-certificates
+   11  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+   12  sudo sh -c "echo deb https://apt.dockerproject.org/repo ubuntu-xenial main > /etc/apt/sources.list.d/docker.list"
+   13  sudo apt-get update
+   14  sudo apt-get purge lxc-docker -y
+   15  apt-cache policy docker-engine
+   16  sudo apt-get -y install linux-image-extra-$(uname -r) linux-image-extra-virtual 4.4.0.38.40
+   17  sudo apt-get -y install docker-engine
+   18  sudo usermod -aG docker $USER
+   19  docker
+   20  docker -v
+   21  docker run hello-world
+   22  sudo docker run hello-world
+   23  docker ps
+   24  sudo docker ps
+   25  sudo usermod -aG docker $USER
+   26  sudo docker ps
+   27  sudo docker ps -
+   28  sudo docker ps -a
+   29  docker images
+   30  sudo docker images
+   31  cd workspace/
+   32  docker build -t db .
+   33  sudo docker build -t db .
+   34  pwd
+   35  mkdir docker_volume_map
+   36  docker run -d --name db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 db:latest
+   37  sudo docker run -d --name db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 db:latest
+   38  docker start db
+   39  sudo docker start db
+   40  sudo docker ps
+   41  rails s
+   42  bundle install
+   43  cd app/
+   44  bundle install
+   45  cd ../
+   46  ./start_application.sh 
+   47  sudo chown -R gklsan ../
+   48  docker ps
+   49  sudo chown -R gklsan ../
+   50  docker ps
+   51  docker ps -a
+   52  docker rm keen_pasteur 
+   53  docker start tech_tips_blog 
+   54  docker exec -it tech_tips_blog /bin/bash
+   55  docker start tech_tips_blog 
+   56  ./start_application.sh 
+   57  cd 
+   58  ls -l
+   59  cd pgadmin4/
+   60  source bin/activate
+   61  wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-2.1-py2.py3-none-any.whl
+   62  pip install pgadmin4-2.1-py2.py3-none-any.whl 
+   63  sudo pip install -U setuptools
+   64  pip install pgadmin4-2.1-py2.py3-none-any.whl 
+   65  echo "SERVER_MODE = False" >> lib/python2.7/site-packages/pgadmin4/config_local.py
+   66  ls
+   67  source bin/activate
+   68  exit
+   69  git status
+   70  cd workspace
+   71  git clone https://gklsan@bitbucket.org/gklsan/blog.git
+   72  sudo apt-get install openjdk-8-jdk
+   73  apt-cache search jdk
+   74  search jdk
+   75  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+   76  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+   77  export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/bin
+   78  javac -version
+   79  sudo chown -R msuser1
+   80  sudo chown -R gklsan *
+   81  sudo usermod -aG docker $USER
+   82  docker ps
+   83  docker ps -a
+   84  docker rm wizardly_wiles 
+   85  docker images
+   86  docker rmi f2a91732366c
+   87  docker ps
+   88  docker ps -a
+   89  git status
+   90  cd blog/
+   91  ./start_application.sh 
+   92  docker ps
+   93  docker ps -a
+   94  docker build -t tech_tips_blog -f docker/Dockerfile .
+   95  docker run -it --name tech_tips_blog -p 3000:3000 -e --volume=/home/gklsan/workspace/blog:/opt/blog --volume=/home/gklsan/workspace/blog_gems:/usr/local/bundle/ tech_tips_blog
+   96  docker ps 
+   97  docker ps -a
+   98  docker exec -it tech_tips_blog /bin/bash
+   99  docker start tech_tips_blog 
+  100  docker ps 
+  101  docker exec -it tech_tips_blog /bin/bash
+  102  ./start_application.sh 
+  103  docker ps
+  104  docker ps -a
+  105  docker rm tech_tips_blogkind_lewin
+  106  ./start_application.sh 
+  107  docker stop tech_tips_blog
+  108  docker rm tech_tips_blog
+  109  ./start_application.sh 
+  110  docker exec -it tech_tips_blog
+  111  docker exec -it tech_tips_blog /bin/bash
+  112  docker ps
+  113  docker ps -a
+  114  docker rm kind_lewin 
+  115  ./start_application.sh 
+  116  docker exec -it tech_tips_blog /bin/bash
+  117  docker ps
+  118  docker ps -a
+  119  docker start tech_tips_blog 
+  120  docker exec -it tech_tips_blog /bin/bash
+  121  docker stop tech_tips_blog 
+  122  docker rm  tech_tips_blog 
+  123  ./start_application.sh 
+  124  c
+  125  ./start_application.sh 
+  126  docker rm tech_tips_blog 
+  127  ./start_application.sh 
+  128  apt-get install virtualenv python-pip libpq-dev python-dev
+  129  sudo apt-get install virtualenv python-pip libpq-dev python-dev
+  130  virtualenv pgadmin4
+  131  mv pgadmin4 ../../
+  132  sudo swapon --show
+  133  df -h
+  134  sudo fallocate -l 16G /swapfile
+  135  sudo chmod 600 /swapfile
+  136  sudo mkswap /swapfile
+  137  df -h
+  138  sudo swapon /swapfile
+  139  sudo swapon --show
+  140  free -h
+  141  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+  142  em -rf /--volume\=
+  143  sudo rm -rf /--volume\=
+  144  cd ~/pgadmin4/
+  145  ls
+  146  echo "SERVER_MODE = False" >> lib/python2.7/site-packages/pgadmin4/config_local.py
+  147  source bin/activate
+  148  python lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
+  149  pip install pgadmin4-2.1-py2.py3-none-any.whl 
+  150  sudo pip install pgadmin4-2.1-py2.py3-none-any.whl 
+  151  '
+  152  sudo pip install pgadmin4-2.1-py2.py3-none-any.whl 
+  153  echo "SERVER_MODE = False" >> lib/python2.7/site-packages/
+  154  cd 
+  155  sudo apt-get install virtualenv python-pip libpq-dev python-dev
+  156  cd
+  157  virtualenv pgadmin4
+  158  cd pgadmin4
+  159  source bin/activate
+  160  pip install https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-2.1-py2.py3-none-any.whl
+  161  pip install https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.0/pip/pgadmin4-2.0-py2.py3-none-any.whl
+  162  apt-get update
+  163  sudo apt-get update
+  164  exit
+  165  cd
+  166  sudo apt-get update
+  167  cd pgadmin4/
+  168  pip install https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-2.1-py2.py3-none-any.whl
+  169  pip install --upgrade pip
+  170  pip install https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-2.1-py2.py3-none-any.whl
+  171  source bin/activate
+  172  exit
+  173  cd workspace/blog
+  174  ./start_application.sh 
+  175  docker ps
+  176  docker start tech_tips_blog 
+  177  docker exec -it tech_tips_blog
+  178  docker exec -it tech_tips_blog /bin/bash
+  179  docker start tech_tips_blog 
+  180  docker exec -it tech_tips_blog /bin/bash
+  181  docker ps
+  182  docker ps -a
+  183  ./start_application.sh 
+  184  \
+  185  ./start_application.sh 
+  186  docker exec -it db /bin/bash
+  187  docker ps
+  188  docker start db 
+  189  docker ps
+  190  docker exec -it db /bin/bash
+  191  docker start db
+  192  docker inspect db
+  193  sudo service docker restart
+  194  docker start db
+  195  docker ps
+  196  docker inspect db
+  197  cd 
+  198  cd pgadmin4/
+  199  cd ..
+  200  rm -rf pgadmin4/
+  201  sudo apt-get install virtualenv python-pip libpq-dev python-dev
+  202  cd
+  203  virtualenv pgadmin4
+  204  cd pgadmin4
+  205  source bin/activate
+  206  pip install https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.0/pip/pgadmin4-2.0-py2.py3-none-any.whl
+  207  nano lib/python2.7/site-packages/pgadmin4/config_local.py
+  208  python lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
+  209  chmod +x ~/pgadmin4/pgadmin4
+  210  nano ~/pgadmin4/pgadmin4
+  211  ./pgadmin4 
+  212  python lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
+  213  ps -ef
+  214  ps -ef | grep pgadmin
+  215  python lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
+  216  sudo chown -R gklsan *
+  217  sudo chown -R gklsan ../
+  218  docker stop db
+  219  docker start db
+  220  docker exec -it db /bin/bash
+  221  sudo service docker restart
+  222  docker start db
+  223  docker exec -it db /bin/bash
+  224  docker start db
+  225  docker ps
+  226  sudo service docker restart
+  227  docker start db
+  228  docker ps
+  229  docker exec -it db /bin/bash
+  230  sudo service docker restart
+  231  docker exec -it db /bin/bash
+  232  docker start db
+  233  docker exec -it db /bin/bash
+  234  docker ps
+  235  docker exec -it new_db /bin/bash
+  236  docker start db
+  237  sudo service docker restart
+  238  docker ps
+  239  docker inspect new_db
+  240  telnet -h 172.17.0.2 -p 32768
+  241  telnet -h 172.17.0.2:32768
+  242  telnet 172.17.0.2:32768
+  243  telnet 172.17.0.2 32768
+  244  telnet 172.17.0.1 32768
+  245  telnet localhost 32768
+  246  docker exec -it new_db /bin/bash
+  247  docker exec -it new_db1 /bin/bash
+  248  docker exec -it db /bin/bash
+  249  cd pgadmin4/
+  250  python lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
+  251  less pgadmin4 
+  252  source bin/activate
+  253  python lib/python2.7/site-packages/pgadmin4/pgAdmin4.py
+  254  nano pgadmin4 
+  255  ./pgadmin4 
+  256  ps -ef | grep pgadmin
+  257  sudo kill -9 3938 6509
+  258  nano pgadmin4 
+  259  ./pgadmin4 
+  260  telnet 172.17.0.2 5432
+  261  telnet 172.17.0.2 32769
+  262  telnet 172.17.0.1 32769
+  263  telnet 172.17.0.0 32769
+  264  docker inspect db
+  265  telnet localhost 32769
+  266  telnet localhost 32768
+  267  telnet 172.17.0.1 32768
+  268  telnet 172.17.0.2 32768
+  269  telnet 172.17.0.3 32768
+  270  telnet 172.17.0.4 32768
+  271  telnet 172.17.0.5 32768
+  272  telnet 172.17.0.6 32768
+  273  telnet 172.17.0.7 32768
+  274  cd
+  275  docker build -t db_new -d workspace/Softwares/docker/Dockerfile.full_9_6 .
+  276  docker build --help
+  277  docker build -t db . 
+  278  docker build -t db_new workspace/Softwares/docker/ 
+  279  docker build -t db_new workspace/Softwares/docker/Dockerfile.full_9_6
+  280  docker build -t db_new workspace/Softwares/docker/Dockerfile.full_9_6 .
+  281  docker build -t new_db workspace/Softwares/docker/Dockerfile.full_9_6 
+  282  docker build -t new_db -f workspace/Softwares/docker/Dockerfile.full_9_6 .
+  283  docker build -t new_db -f workspace/Softwares/docker/Dockerfile.full_9_6
+  284  docker build -t new_db -f workspace/Softwares/docker/Dockerfile.full_9_6 .
+  285  sudo docker build -t new_db -f workspace/Softwares/docker/Dockerfile.full_9_6 .
+  286  cd workspace/Softwares/docker/
+  287  sudo docker build -t new_db -f Dockerfile.full_9_6 .
+  288  docker run -it --name new_db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  289  docker ps
+  290  docker run -it --name new_db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  291  docker rm new_db 
+  292  docker run -it --name new_db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  293  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  294  docker rm new_db 
+  295  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  296  sudo docker build -t new_db -f Dockerfile.full_9_6 .
+  297  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  298  sudo docker build -t new_db -f Dockerfile.full_9_6 .
+  299  docker build -t new_db -f Dockerfile.full_9_6 .
+  300  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest
+  301  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest -U gklsan
+  302  postgres --help
+  303  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest -b 0.0.0.0
+  304  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 new_db:latest postgres --help
+  305  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768 -h 172.17.0.1 new_db:latest
+  306  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_PASSWORD=postgres -p 32768 -h 172.17.0.1 new_db:latest
+  307  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_PASSWORD=postgres -p 32768 new_db:latest
+  308  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 new_db:latest
+  309  docker ps
+  310  docker build -t db -f Dockerfile.posgres_9_6 .
+  311  docker run -it --name new_db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  312  docker build -t new_db` -f Dockerfile.test .
+  313  docker build -t new_db1 -f Dockerfile.test .
+  314  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  315  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  316  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768:32768 db:latest
+  317  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 5432:32768 db:latest
+  318  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  319  docker run -it --name db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  320  docker rm db
+  321  docker stop db
+  322  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 5432:32768 db:latest
+  323  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768:5432 db:latest
+  324  docker rm new_db1 
+  325  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768:5432 db:latest
+  326  docker run -it --name new_db1 --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  327  docker build -t new_db1 -f Dockerfile.test .
+  328  docker build -t db -f Dockerfile.test .
+  329  docker build -t db -f Dockerfile.posgres_9_6 .
+  330  docker run -it --name db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  331  docker rm db
+  332  docker rm new_db1
+  333  docker run -it --name db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  334  docker build -t db -f Dockerfile.posgres_9_6 .
+  335  ifconfig
+  336  docker run -it --name db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  337  docker build -t db -f Dockerfile.posgres_9_6 .
+  338  docker run -it --name db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768 db:latest
+  339  docker run -it --name db --rm -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -e POSTGRES_USER=gklsan -e POSTGRES_PASSWORD=gklsan -p 32768:5432 db:latest
+  340  docker build -t db -f Dockerfile.posgres_9_6 .
+  341  docker run -it --name db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768:5432 db:latest
+  342  docker run -it --name db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768:5432 db
+  343  docker stop db
+  344  docker rm db
+  345  docker run -d --name db -v /home/gklsan/workspace/docker_volume_map:/docker_volume_map/ -p 32768:5432 db
+  346  docker ps
+  347  docker logs -f tech_tips_blog 
+  348  docker ps
+  349  docker logs -f tech_tips_blog 
+  350  docker ps
+  351  sudo service docker restart
+  352  sudo service docker restart
+  353  docker ps
+  354  docker inspect new_db
+  355  sudo service docker restart
+  356  docker ps
+  357  docker ps -a
+  358  docker images
+  359  docker ps
+  360  ping 172.17.0.1
+  361  ping 172.17.0.1 32768
+  362  ping 172.17.0.1 -p 32768
+  363  ping 172.17.0.1 -p 32769
+  364  ping -p 32768 172.17.0.1
+  365  ping -p 32768 -h 172.17.0.1
+  366  telnet 172.17.0.1 32769
+  367  telnet 172.17.0.1 32768
+  368  telnet 172.17.0.2 32768
+  369  telnet 172.17.0.3 32768
+  370  telnet 172.17.0.4 32768
+  371  telnet 172.17.0.1 32769
+  372  telnet 172.17.0.2 32769
+  373  telnet 172.17.0.3 32769
+  374  docker-machine ip default
+  375  sudo service docker restart
+  376  docker load --input db_docker.tar 
+  377  sudo service docker restart
+  378  docker ps
+  379  sudo service docker restart
+  380  docker ps
+  381  sudo service docker restart
+  382  docker images
+  383  docker rmi c0d2394d870a f62dd85e252f a87bbfca93bc 16c7c536b6cc e7d99033da24 3f15f7a270d3 4de099dd540d 3d1ff51a246c 6c112fc5df94 04b97e097241 fd6a78b6a5a4 cd6eae3c3dd3 d5b15cd66c7d d57d8c44d7bc a04a00558c06 871725908b75 c50f3f79f37d 0d3e099c8a43 9e9e93feef14 cef46f768c94 125ac3e7e6e6  fd6bc8c4b335
+  384  docker images
+  385  docker rmi 28c6b5d1c80a  25acdf8c9511 25112ba789b5 5f7e01d60f10  945913472f00 a179675e0abb b6c2f9bbd55c d251b5a3c9ce 574d00ecc316 d195c4b700da d2c4e059acec 4f4ba0712e05 762cfe9bbec9 be956d938ceb ec237bd9ed68 9fe54065c26d 44ceda2d131e d0327c4c94bd b1ad6a447c28 fd6c8b53b852 ed3ccb7a7e10 251039287223 4fa31d4f5dc9 47c0a8d12b09 e6ee29e844d5 e5097468a11f 
+  386  docker images
+  387  docker rmi e5097468a11f
+  388  docker -f rmi e5097468a11f
+  389  docker rmi -f e5097468a11f
+  390  docker images
+  391  docker rmi 32dc56bab013 d3ad478d58a2
+  392  docker images
+  393  docker exec -it db /bin/bash
+  394  docker start db
+  395  docker exec -it db /bin/bash
+  396  sudo service docker restart
+  397  docker start db
+  398  sudo service docker restart
+  399  docker start db
+  400  docker ps
+  401  docker inspect db
+  402  telnet localhost 32768
+  403  telnet 172.17.0.1 32768
+  404  telnet 172.17.0.2 32768
+  405  sudo service docker restart
+  406  docker start db
+  407  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' db
+  408  docker build -t db -f Dockerfile.posgres_9_6 
+  409  docker build -t db -f Dockerfile.posgres_9_6 .
+  410  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' db
+  411  docker ps
+  412  sudo service docker restart
+  413  docker ps
+  414  sudo service docker restart
+  415  docker ps
+  416  sudo service docker restart
+  417  docker ps
+  418  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' new_db1
+  419  sudo service docker restart
+  420  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' db
+  421  docker ps
+  422  sudo service docker restart
+  423  netstat -tlna
+  424  sysctl net.ipv6.bindv6only
+  425  sysctl net.ipv6.bindv6only=1
+  426  sudo sysctl net.ipv6.bindv6only=1
+  427  netstat -tlna
+  428  sudo service docker restart
+  429  netstat -tlna
+  430  sudo service docker restart
+  431  sudo sysctl net.ipv6.bindv6only=0
+  432  docker ps
+  433  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' db
+  434  sudo service network-manager restart
+  435  docker stat te
+  436  cd 
+  437  sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+  438  cd  workspace/blog
+  439  ./start_application.sh 
+  440  ls -l
+  441  psql
+  442  psql -h localhost -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  443  psql -h 172.17.0.2 -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  444  psql -h 172.17.0.1 -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  445  sudo apt install postgresql-client-common
+  446  psql -h localhost -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  447  psql -h 172.17.0.2 -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  448  sudo apt-get install postgresql-client
+  449  psql -h 172.17.0.2 -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  450  psql -h 172.17.0.1 -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  451  $ pg_restore --verbose --clean --no-acl --no-owner -h db -U gklsan -d tech_tips_blog gklsan_04_feb_2017_1.dump 
+  452  $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U gklsan -d tech_tips_blog gklsan_04_feb_2017_1.dump 
+  453  $ pg_restore --verbose --clean --no-acl --no-owner -h 172.17.0.1 -U gklsan -d tech_tips_blog gklsan_04_feb_2017_1.dump 
+  454  pg_restore --verbose --clean --no-acl --no-owner -h localhost -p 32768 -U gklsan -d tech_tips_blog gklsan_04_feb_2017_1.dump
+  455  ./start_application.sh 
+  456  sudo chown -R gklsan ../
+  457  ./start_application.sh 
+  458  sudo chown -R gklsan ../
+  459  ./start_application.sh 
+  460  sudo chown -R gklsan ../
+  461  ./start_application.sh 
+  462  docker ps
+  463  docker ps -a
+  464  docker rm tech_tips_blog 
+  465  ./start_application.sh 
+  466  sudo ./start_application.sh 
+  467  ./start_application.sh 
+  468  docker ps
+  469  docker exec -it tech_tips_blog /bin/bash
+  470  docker ps
+  471  docker start tech_tips_blog
+  472  docker exec -it tech_tips_blog /bin/bash
+  473  docker start tech_tips_blog
+  474  docker exec -it tech_tips_blog /bin/bash
+  475  docker start tech_tips_blog
+  476  docker exec -it tech_tips_blog /bin/bash
+  477  docker start tech_tips_blog
+  478  docker exec -it tech_tips_blog /bin/bash
+  479  ./start_application.sh 
+  480  docker exec -it tech_tips_blog /bin/bash
+  481  ./start_application.sh 
+  482  docker exec -it tech_tips_blog /bin/bash
+  483  ./start_application.sh 
+  484  docker exec -it tech_tips_blog /bin/bash
+  485  ./start_application.sh 
+  486  docker exec -it tech_tips_blog /bin/bash
+  487  rails server 
+  488  docker exec -it tech_tips_blog /bin/bash
+  489  ./start_application.sh 
+  490  docker exec -it tech_tips_blog /bin/bash
+  491  ./start_application.sh 
+  492  docker exec -it tech_tips_blog /bin/bash
+  493  docker start tech_tips_blog 
+  494  docker exec -it tech_tips_blog /bin/bash
+  495  ./start_application.sh 
+  496  sudo chown -R gklsan ../
+  497  ./start_application.sh 
+  498  psql -h 172.17.0.1 -p 32768 -d tech_tips_blog -U gklsan -f gklsan_04_feb_2017_1.dump 
+  499  ./start_application.sh 
+  500  sudo chown -R gklsan ../
+  501  ./start_application.sh  
+  502  sudo chown -R gklsan ../
+  503  git status
+  504  git status
+  505  git reset  HEAD
+  506  git status
+  507  git branch
+  508  git k
+  509  git am
+  510  git config --global user.email "pgokulmca@gmail.com"
+  511  git config --global user.name "Gokul"
+  512  git am
+  513  git status
+  514  git branch -a
+  515  git branch -rr
+  516  git branch -r
+  517  git checkout exeternal_mail_template
+  518  git status
+  519  mv Gemfile Gemfile1
+  520  mv Gemfile.lock Gemfile.lock1
+  521  git checkout exeternal_mail_template
+  522  rm -rf .idea/
+  523  git checkout exeternal_mail_template
+  524  git pull 
+  525  cp Gemfile1 Gemfile
+  526  cp Gemfile.lock1  Gemfile.lock
+  527  git status
+  528  git diff
+  529  git status
+  530  ./start_application.sh 
+  531  docker ps
+  532  docker stop tech_tips_blog 
+  533  docker rm tech_tips_blog 
+  534  ./start_application.sh 
+  535  rm -rf public/assets/
+  536  sudo rm -rf public/assets/
+  537  ./start_application.sh 
+  538  docker start db
+  539  docker ps
+  540  docker ps -a
+  541  cd workspace/blog
+  542  ./start_application.sh 
+  543  sudo chown -R gklsan *
+  544  cd ~/pgadmin4/
+  545  history
+gklsan@gklsan ~/workspace/blog $ 
